@@ -18,7 +18,7 @@ Now virtual box setup done.Let’s make  wazuh-agent these two machine.So I brow
 
 From wazuh dashboard I goto Agent management add new agent,select linux package  amd64,set server ip (my host machine ip where wazuh server is running),give a name of the agent.Now copy the command and paste in ubuntu terminal with root privilages permission and start agent following the given command.Same thing is also for windows machine where I paste the command in powershell which I run as administrator.
 
-Suricata Setup
+### Suricata Setup
 It is a network intrution dection system.It’s used for analysis network based log to identify anomolies into the network.Let’s look for the setup.I want to setup suricata in my ubuto machine.So I go to ubuntu terminal and paste these command
 sudo add-apt-repository ppa:oisf/suricata-stable
 sudo apt-get update
