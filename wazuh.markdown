@@ -39,11 +39,11 @@ default-rule-path: /etc/suricata/rules
 rule-files:
 - "*.rules"                  [here manually add all the rules not wildcard]
 
-# Global stats configuration
+##### Global stats configuration
 stats:
 enabled: yes
 
-# Linux high speed capture support
+##### Linux high speed capture support
 af-packet:
   - interface: enp0s3        [it is my ubuntu interface found from ifconfig command]
 
@@ -59,7 +59,7 @@ the following code.
 
 Now everyting setup I need to restart the wazuh-agent the command is:
 sudo systemctl restart wazuh-agent
-Issues:
+### Issues:
 Basically I found three issues while setting up suricata:
 1.E: detect: opening rule file /etc/suricata/rule>
 2.E: unix-manager: failed to create socket directory
